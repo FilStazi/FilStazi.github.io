@@ -1,0 +1,95 @@
+h1{
+	color: blue;
+	text-align: center;
+	font-family: Arial;
+	font-size: 28px;
+	font-weight: bold;
+	border: 3px solid black;
+}
+
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td{
+	border: 3px solid black;
+	text-align: center;
+	padding: 5px;
+}
+
+#a_id{ /* un solo elemento può avere a_id */
+	background-color: red;
+	width: 200px;
+	padding:  20px;
+	margin:  20px;
+	height: 40px;
+}
+
+.a_class{ /* quanti elementi voglio possono avere a_class */
+	background-color: red;
+	width: 200px;
+	padding:  20px;
+	margin:  20px;
+	height: 400px;
+}
+
+ul li{ /* solo li che è in un li sarà blu */
+	color: blue;
+}
+
+a[href="http://www.google.com"]{ /*solo i link con questo href saranno rossi */
+	color: red;
+} 
+
+button{
+	height: 20px;
+	width: 2 00px;
+	color: blue;
+	background-color:  green;
+}
+
+button:hover{
+	background-color: red;
+}
+
+@media (min-width:  600px){
+	body{
+		background-color: white;
+	}
+}
+
+
+@media (max-width:  599px){
+	body{
+		background-color: green;
+	}
+}
+
+#container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#container > div{
+	background-color: white;
+	font-size: 20px;
+	margin: 20px;
+	padding: 20px;
+	width: 200px;
+}
+
+#grid {
+	background-color: green;
+	display:  grid;
+	padding: 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+	grid-template-columns: 200px 100px auto;
+}
+
+.grid-item{
+	background-color: white;
+	font-size: 20px;
+	text-align: center;
+}
